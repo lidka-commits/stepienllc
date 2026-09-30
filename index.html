@@ -111,7 +111,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;display:flex;ali
 .mob .mcta:hover{filter:brightness(.88)}
 
 /* SHARED */
-.label{font-size:11px;font-weight:800;letter-spacing:3.5px;text-transform:uppercase;color:var(--or)}
+.label{font-family:'DM Serif Display',serif;font-style:italic;font-weight:400;font-size:clamp(13px,1.4vw,18px);letter-spacing:0.3px;text-transform:none;color:var(--or)}
 .btn-dk{display:inline-block;background:var(--bk);color:var(--wh);border-radius:999px;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;padding:15px 36px;cursor:pointer;text-decoration:none;transition:filter .2s,transform .15s}
 .btn-dk:hover{filter:brightness(5);transform:translateY(-1px)}
 .btn-or{display:inline-block;background:var(--or);color:var(--wh);border-radius:999px;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;padding:15px 36px;cursor:pointer;text-decoration:none;transition:filter .2s,transform .15s}
@@ -131,7 +131,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:68px;display:flex;ali
 /* CTA BAR */
 .cta-bar{padding:96px 80px;display:flex;align-items:center;justify-content:space-between;gap:48px;background:var(--or)}
 .cta-bar h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3.2vw,48px);color:var(--wh);font-weight:400;max-width:560px;line-height:1.1}
-.cta-bar h2 em{font-style:italic;color:var(--wh)}
+.cta-bar h2 em{font-style:italic;color:rgba(255,255,255,.75)}
 
 /* FOOTER */
 footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
@@ -278,8 +278,8 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
 .xmas-banner-cta{text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;flex-shrink:0}
 
 .xl-hero{margin-top:68px;background:var(--xcream);border-bottom:1px solid var(--bd);padding:64px 80px 56px;text-align:center;display:flex;flex-direction:column;align-items:center}
-.xl-lights-svg{width:100%;max-width:620px;height:auto;margin-bottom:32px}
-.xl-hero .label{color:var(--xr);margin-bottom:18px;font-weight:900}
+.xl-lights-svg{width:100%;max-width:1120px;height:auto;margin-bottom:32px}
+.xl-hero .label{color:var(--xr);margin-bottom:18px}
 .xl-hero h1{font-family:'DM Serif Display',serif;font-weight:700;font-size:clamp(42px,5.5vw,74px);line-height:1.05;color:var(--xg);margin-bottom:22px;max-width:760px}
 .xl-hero p{font-size:17px;font-weight:400;color:var(--mid-dk);line-height:1.85;max-width:560px;margin-bottom:36px}
 .xl-hero-btns{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
@@ -296,7 +296,8 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
 .xl-feat h3{font-family:'DM Serif Display',serif;font-size:21px;color:var(--bk);font-weight:600;margin-bottom:10px;line-height:1.2}
 .xl-feat p{font-size:14px;font-weight:400;color:var(--mid-dk);line-height:1.7}
 
-.xl-promo{padding:56px 80px;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;background:var(--xg)}
+.xl-promo{padding:56px 80px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;background:var(--xg)}
+.xl-promo.xl-promo-center{justify-content:center;gap:48px}
 .xl-promo-txt{font-family:'DM Serif Display',serif;font-size:clamp(20px,2.3vw,29px);color:var(--wh);font-weight:400;max-width:480px;line-height:1.3}
 .xl-promo-offer{text-align:left}
 .xl-promo-offer .amt{font-family:'DM Serif Display',serif;font-size:clamp(28px,3vw,40px);color:var(--wh);font-weight:700;display:block}
@@ -313,7 +314,7 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
 .xl-price-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:13px 0;border-bottom:1px dashed var(--bd);font-size:15px;font-weight:400;color:var(--bk)}
 .xl-price-row:last-child{border-bottom:none}
 .xl-price-row span:last-child{font-weight:600;white-space:nowrap}
-.xl-price-note{margin-top:28px;font-size:14px;font-weight:500;color:var(--bk);padding-top:20px;border-top:1px solid var(--bd)}
+p.xl-price-note{margin-top:28px;font-size:14px;font-weight:500;color:var(--bk);padding-top:20px;border-top:1px solid var(--bd);max-width:none}
 .xl-price-note strong{color:var(--xr)}
 
 .xl-area{padding:64px 80px;border-bottom:1px solid var(--bd);background:var(--off)}
@@ -481,7 +482,7 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
       <div class="h-hero-stats rv d4">
         <div class="h-stat"><span class="h-stat-n">Family Owned &amp; Operated</span></div>
         <div class="h-stat-sep"></div>
-        <div class="h-stat"><span class="h-stat-n">3 Core Services</span></div>
+        <div class="h-stat"><span class="h-stat-n">3 Core<br>Services</span></div>
         <div class="h-stat-sep"></div>
         <div class="h-stat"><span class="h-stat-n">Arizona &middot; East Valley</span></div>
       </div>
@@ -898,7 +899,7 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
       <p>Clean, even lines on every edge.</p>
     </div>
     <div class="xl-feat rv d1">
-      <div class="xl-feat-icon"><svg viewBox="0 0 40 40" fill="none" stroke="var(--xg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 37C18 29 19 22 21 16"/><path d="M21 16C11 13 5 17 3 23"/><path d="M21 16C15 8 9 6 5 9"/><path d="M21 16C21 6 25 2 29 1"/><path d="M21 16C29 8 35 9 38 13"/><path d="M21 16C30 15 37 20 38 28"/></svg></div>
+      <div class="xl-feat-icon"><svg viewBox="0 0 40 40" fill="none" stroke="var(--xg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M25 37C23 28 19 21 17 15"/><path d="M17 15C7 13 2 18 1 24"/><path d="M17 15C13 6 7 3 3 4"/><path d="M17 15C21 5 28 3 33 5"/><path d="M17 15C25 14 32 19 34 25"/></svg></div>
       <h3>Yard &amp; Palm Displays</h3>
       <p>Wrapped palms, shrubs, and big front-yard inflatables.</p>
     </div>
@@ -914,7 +915,7 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
     </div>
   </div>
 
-  <div class="xl-promo">
+  <div class="xl-promo xl-promo-center">
     <p class="xl-promo-txt rv">Book early &mdash; install dates fill up fast.</p>
     <div class="xl-promo-div rv d1"></div>
     <div class="xl-promo-offer rv d1"><span class="amt">$55 off</span><span class="cond">when you book by October 31</span></div>
@@ -988,7 +989,7 @@ footer{padding:40px 80px;border-top:1px solid var(--bd);display:flex;align-items
   </div>
 
   <div class="xl-promo">
-    <p class="xl-promo-txt rv">Interested in Christmas lights for your home or business?<br>We can't wait to hear from you.</p>
+    <p class="xl-promo-txt rv">Interested in Christmas lights for your home or business?<br><em>We can't wait to hear from you.</em></p>
     <span class="btn-wh rv d1" onclick="go('contact')">Get a Quote</span>
   </div>
 
